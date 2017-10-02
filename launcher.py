@@ -46,4 +46,6 @@ player = monster(5,5,3,2)
 while True:
   attackRand = random.randint(player.attack - 2, player.attack + 3)
   defenceRand =random.randint(player.defence - 2, player.defence + 3)
-  
+  lvlRand = random.randint(player.lvl -1, player.lvl + 2)
+  enemy = monster(attackRand, defenceRand, 3, lvlRand)
+  player.fight(enemy)
