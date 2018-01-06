@@ -1,8 +1,6 @@
 import random
 import time
 
-#Pokemon Clone Made By Hunter Levinger 
-
 class Monster(object):
     def __init__(self, name, attack, defense, poketype, lvl):
         self.name = name
